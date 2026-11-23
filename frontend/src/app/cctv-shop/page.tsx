@@ -44,7 +44,7 @@ const products: Product[] = [
     category: "Indoor Cameras",
     type: "IP Camera",
     description: "High-definition indoor surveillance for offices, shops and residential spaces.",
-    image: "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=900",
+    image: "/cctv-security-wall.png",
     resolution: "4MP Ultra HD",
     nightVision: "30m IR Night Vision",
     connectivity: "PoE / Ethernet",
@@ -57,7 +57,7 @@ const products: Product[] = [
     category: "Outdoor Cameras",
     type: "IP Camera",
     description: "Weather-resistant outdoor camera designed for perimeter and entrance protection.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900",
+    image: "/cctv-security-wall.png",
     resolution: "8MP 4K",
     nightVision: "50m IR Night Vision",
     connectivity: "PoE / Ethernet",
@@ -70,7 +70,7 @@ const products: Product[] = [
     category: "PTZ Cameras",
     type: "PTZ IP Camera",
     description: "Pan, tilt and zoom surveillance for large facilities and wide-area monitoring.",
-    image: "https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=900",
+    image: "/cctv-security-wall.png",
     resolution: "4MP",
     nightVision: "100m IR Night Vision",
     connectivity: "PoE+ / Network",
@@ -83,7 +83,7 @@ const products: Product[] = [
     category: "Smart Doorbells",
     type: "Video Doorbell",
     description: "Smart entrance monitoring with visitor video, alerts and two-way communication.",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=900",
+    image: "/cctv-security-wall.png",
     resolution: "2K",
     nightVision: "Infrared Night Vision",
     connectivity: "Wi-Fi",
@@ -95,7 +95,7 @@ const products: Product[] = [
     category: "Outdoor Cameras",
     type: "IP Camera",
     description: "Reliable night-time monitoring for warehouses, compounds and business premises.",
-    image: "https://images.unsplash.com/photo-1508615070457-7baeba4003ab?w=900",
+    image: "/cctv-security-wall.png",
     resolution: "5MP",
     nightVision: "60m Color Night Vision",
     connectivity: "PoE / Ethernet",
@@ -107,7 +107,7 @@ const products: Product[] = [
     category: "Indoor Cameras",
     type: "Wi-Fi Camera",
     description: "Compact wireless monitoring for homes, counters and small business areas.",
-    image: "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=900",
+    image: "/cctv-security-wall.png",
     resolution: "2K QHD",
     nightVision: "10m IR Night Vision",
     connectivity: "2.4GHz Wi-Fi",
@@ -286,12 +286,12 @@ export default function CCTVShopPage() {
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1800"
+            src="/cctv-security-wall.png"
             alt="Modern surveillance control room"
-            className="h-full w-full object-cover opacity-20"
+            className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070d17] via-[#070d17]/90 to-[#070d17]/50" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070d17] via-transparent to-[#070d17]/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#eef3f8] via-[#eef3f8]/88 to-[#eef3f8]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#eef3f8] via-transparent to-transparent" />
         </div>
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">

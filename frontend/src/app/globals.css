@@ -2,10 +2,10 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: dark;
-  --background: #080e18;
-  --foreground: #ffffff;
-  --accent: #22d3ee;
+  color-scheme: light;
+  --background: #eef3f8;
+  --foreground: #151d32;
+  --accent: #5230ed;
 }
 
 * {
@@ -49,4 +49,125 @@ img {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 11px;
+  border: 1px solid #293954;
+  border-radius: 9px;
+  background: #111d30;
+  color: #9db8e4;
+}
+
+.language-switcher select {
+  appearance: none;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #e3eaf6;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.language-switcher option {
+  color: #fff;
+  background: #111d30;
+}
+
+html[lang="my"] body {
+  font-family: "Noto Sans Myanmar", "Myanmar Text", "Pyidaungsu", sans-serif;
+}
+
+/* Shared marketplace shell */
+.marketplace-layout {
+  min-height: 100vh;
+  background: #eef3f8;
+  color: #151d32;
+}
+
+.marketplace-layout main {
+  min-width: 0;
+}
+
+.marketplace-layout main > header,
+.marketplace-layout main > footer {
+  display: none;
+}
+
+.marketplace-layout main > div:first-child {
+  display: none;
+}
+
+/* Project-wide marketplace visual overrides */
+.marketplace-layout main {
+  background: #eef3f8 !important;
+  color: #151d32 !important;
+}
+
+.marketplace-layout main section {
+  border-color: #e2e8f0 !important;
+}
+
+.marketplace-layout main h1,
+.marketplace-layout main h2,
+.marketplace-layout main h3,
+.marketplace-layout main h4 {
+  color: #151d32 !important;
+}
+
+.marketplace-layout main p,
+.marketplace-layout main li,
+.marketplace-layout main span,
+.marketplace-layout main label {
+  color: inherit;
+}
+
+.marketplace-layout main [class*="bg-[#080e18]"],
+.marketplace-layout main [class*="bg-[#060b13]"],
+.marketplace-layout main [class*="bg-[#070d17]"],
+.marketplace-layout main [class*="bg-[#0b1420]"],
+.marketplace-layout main [class*="bg-[#0d1623]"],
+.marketplace-layout main [class*="bg-[#101b29]"],
+.marketplace-layout main [class*="bg-[#111827]"],
+.marketplace-layout main [class*="bg-[#1f2937]"] {
+  background-color: #eef3f8 !important;
+}
+
+.marketplace-layout main [class*="bg-slate-900"],
+.marketplace-layout main [class*="bg-slate-950"] {
+  background-color: #eef3f8 !important;
+}
+
+.marketplace-layout main [class~="text-white"],
+.marketplace-layout main [class*="text-slate-200"],
+.marketplace-layout main [class*="text-slate-300"] {
+  color: #334155 !important;
+}
+
+.marketplace-layout main [class*="text-slate-400"],
+.marketplace-layout main [class*="text-slate-500"],
+.marketplace-layout main [class*="text-slate-600"] {
+  color: #64748b !important;
+}
+
+.marketplace-layout main [class*="text-cyan-400"],
+.marketplace-layout main [class*="text-cyan-300"] {
+  color: #5230ed !important;
+}
+
+.marketplace-layout main [class*="border-white/10"],
+.marketplace-layout main [class*="border-white/15"],
+.marketplace-layout main [class*="border-white/20"] {
+  border-color: #e2e8f0 !important;
+}
+
+.marketplace-layout main [class*="border-cyan-400"] {
+  border-color: #5230ed !important;
+}
+
+.marketplace-layout main [class*="bg-cyan-400"] {
+  background-color: #5230ed !important;
 }

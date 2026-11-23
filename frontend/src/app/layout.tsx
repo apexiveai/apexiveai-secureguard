@@ -1,6 +1,9 @@
 
 import type { Metadata } from "next";
 import "./globals.css";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
+import MarketplaceHeader from "@/components/MarketplaceHeader";
+import MarketplaceFooter from "@/components/MarketplaceFooter";
 
 export const metadata: Metadata = {
   title: {
@@ -29,7 +32,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <LanguageProvider>
+          <div className="marketplace-layout">
+            <MarketplaceHeader />
+            {children}
+            <MarketplaceFooter />
+          </div>
+        </LanguageProvider>
+      </body>
     </html>
   );
 }

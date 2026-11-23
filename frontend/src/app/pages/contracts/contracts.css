@@ -1,0 +1,121 @@
+
+.contracts-page { display:flex; flex-direction:column; gap:20px; min-width:0; color:#e8edf7; animation:contractFade .25s ease; }
+@keyframes contractFade { from{opacity:0;transform:translateY(5px)} to{opacity:1;transform:translateY(0)} }
+.contracts-heading,.contracts-heading-actions,.contracts-panel-heading,.contracts-modal-head,.contracts-modal-actions { display:flex; align-items:center; justify-content:space-between; gap:14px; }
+.contracts-heading h1 { margin:7px 0 5px; font-size:27px; letter-spacing:-.8px; }
+.contracts-heading p,.contracts-panel-heading p { margin:0; color:#8491a8; font-size:13px; }
+.contracts-eyebrow { display:flex; align-items:center; gap:7px; color:#77a5ff; font-size:10px; font-weight:800; letter-spacing:1.4px; }
+.contracts-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 14px; border-radius:9px; border:1px solid transparent; font-size:11px; font-weight:700; cursor:pointer; transition:.2s; }
+.contracts-btn.primary { color:#fff; background:#3478f6; }
+.contracts-btn.primary:hover { background:#2466dc; transform:translateY(-1px); }
+.contracts-btn.secondary { color:#d4deef; background:#172238; border-color:#293954; }
+.contracts-btn.secondary:hover { background:#202f49; }
+.contracts-notice { display:flex; align-items:center; gap:10px; padding:12px 14px; border:1px solid #574626; background:#292316; color:#e9c47c; border-radius:10px; font-size:11px; }
+.contracts-metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:13px; }
+.contracts-metric { display:flex; align-items:center; gap:13px; min-width:0; padding:17px; background:#101a2c; border:1px solid #1e2d45; border-radius:13px; }
+.contract-metric-icon { width:40px; height:40px; display:grid; place-items:center; border-radius:11px; flex-shrink:0; }
+.contract-metric-icon svg { width:19px; height:19px; }
+.contract-metric-icon.blue { background:#1b3762; color:#72aaff; }
+.contract-metric-icon.green { background:#173b34; color:#5cdbb0; }
+.contract-metric-icon.amber { background:#49321d; color:#f4b36c; }
+.contract-metric-icon.purple { background:#33284e; color:#b59aff; }
+.contracts-metric div { display:flex; flex-direction:column; min-width:0; }
+.contracts-metric small { color:#8190a9; font-size:9px; letter-spacing:.9px; font-weight:800; }
+.contracts-metric strong { font-size:25px; line-height:1.5; }
+.contracts-metric em { color:#71809a; font-size:10px; font-style:normal; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.contracts-toolbar { display:flex; align-items:center; gap:10px; }
+.contracts-search { flex:1; max-width:430px; display:flex; align-items:center; gap:9px; padding:0 11px; background:#0b1423; border:1px solid #293952; border-radius:8px; color:#788ba9; }
+.contracts-search input { width:100%; padding:10px 0; border:0; outline:0; background:transparent; color:#e8edf7; font-size:11px; }
+.contracts-toolbar select,.contracts-modal select,.contracts-modal input,.contracts-modal textarea,.payment-update-label select { padding:10px; color:#e4eaf5; background:#0b1423; border:1px solid #2a3a54; border-radius:8px; outline:none; font-size:11px; }
+.contracts-toolbar select { min-width:140px; }
+.contracts-panel { min-width:0; padding:19px; background:#101a2c; border:1px solid #1e2d45; border-radius:13px; }
+.contracts-panel-heading { margin-bottom:16px; }
+.contracts-panel-heading h2 { margin:0 0 5px; font-size:15px; }
+.contracts-panel-heading > svg { color:#8298ba; }
+.contracts-register-label { display:flex; align-items:center; gap:6px; color:#8299bd; font-size:9px; font-weight:800; letter-spacing:.8px; }
+.contracts-table-wrap { overflow-x:auto; }
+.contracts-table { width:100%; min-width:1050px; border-collapse:collapse; text-align:left; }
+.contracts-table th { padding:12px 9px; border-bottom:1px solid #29364c; color:#71829e; font-size:9px; letter-spacing:.7px; font-weight:800; white-space:nowrap; }
+.contracts-table td { padding:13px 9px; border-bottom:1px solid #1e2b40; color:#c2ccdc; font-size:10px; vertical-align:middle; }
+.contracts-table tbody tr:last-child td { border-bottom:0; }
+.contracts-table td:first-child { min-width:185px; }
+.contract-id,.contract-client,.contracts-table td:first-child small,.contract-dates { display:block; }
+.contract-id { color:#7daaff; font-size:10px; margin-bottom:4px; }
+.contract-client { color:#e0e7f2; font-size:11px; font-weight:700; margin-bottom:3px; }
+.contracts-table td:first-child small { color:#7d8da5; font-size:9px; }
+.contract-dates { color:#aab7ca; line-height:1.7; white-space:nowrap; }
+.contract-fee { color:#a9c8ff !important; font-weight:700; white-space:nowrap; }
+.contract-status { display:inline-flex; align-items:center; padding:5px 8px; border-radius:20px; font-size:9px; font-weight:800; white-space:nowrap; background:#26344a; color:#aab9ce; }
+.contract-status.active,.contract-status.paid { background:#173b32; color:#71d9ad; }
+.contract-status.expiring,.contract-status.pending { background:#49391f; color:#f4c477; }
+.contract-status.expired,.contract-status.overdue,.contract-status.terminated { background:#47272e; color:#ff8c9a; }
+.contract-status.draft { background:#303746; color:#a0a8b7; }
+.contract-row-actions { display:flex; gap:4px; }
+.contract-row-actions button { display:grid; place-items:center; width:29px; height:29px; border:1px solid #2b3c56; border-radius:7px; color:#9ab2d7; background:#16243a; cursor:pointer; }
+.contract-row-actions button:hover { color:#fff; border-color:#4b83d7; }
+.contracts-empty { padding:25px 10px !important; text-align:center; color:#71819b !important; font-size:12px !important; }
+.contracts-bottom-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:15px; }
+.renewal-item { display:flex; align-items:center; gap:11px; padding:12px 0; border-top:1px solid #202d42; }
+.renewal-icon { width:34px; height:34px; flex-shrink:0; display:grid; place-items:center; border-radius:9px; color:#e9bd72; background:#40321d; }
+.renewal-item > div { flex:1; min-width:0; display:flex; flex-direction:column; gap:4px; }
+.renewal-item strong { font-size:11px; }
+.renewal-item small { color:#8090a8; font-size:9px; }
+.renewal-item > div > span { color:#e4bd7a; font-size:9px; }
+.payment-summary { display:flex; flex-direction:column; gap:0; }
+.payment-summary > div { display:flex; align-items:center; gap:10px; padding:13px 0; border-top:1px solid #202d42; color:#aab7ca; font-size:11px; }
+.payment-summary strong { margin-left:auto; color:#e7edf7; font-size:14px; }
+.payment-dot { width:8px; height:8px; border-radius:50%; }
+.payment-dot.paid { background:#5bd6a2; }
+.payment-dot.pending { background:#edbb67; }
+.payment-dot.overdue { background:#f07886; }
+.payment-footnote { color:#75849b; font-size:10px; line-height:1.6; margin:12px 0 0; }
+.contracts-modal-backdrop { position:fixed; z-index:1000; inset:0; display:grid; place-items:center; padding:18px; background:#030914c9; backdrop-filter:blur(5px); }
+.contracts-modal { width:min(100%,700px); max-height:90vh; overflow-y:auto; display:flex; flex-direction:column; gap:15px; padding:22px; border:1px solid #34445e; border-radius:15px; background:#111d30; box-shadow:0 25px 80px #0009; }
+.contracts-modal-head { margin-bottom:3px; }
+.contracts-modal-head h2 { margin:0 0 5px; font-size:17px; }
+.contracts-modal-head p { margin:0; color:#8594ab; font-size:10px; }
+.contracts-modal-head > button { border:0; color:#9eacc0; background:transparent; cursor:pointer; }
+.contracts-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px; }
+.contracts-form-grid label { display:flex; flex-direction:column; gap:7px; color:#b9c5d8; font-size:10px; font-weight:700; min-width:0; }
+.contracts-form-grid label.wide { grid-column:1/-1; }
+.contracts-form-grid input,.contracts-form-grid select,.contracts-form-grid textarea { width:100%; box-sizing:border-box; }
+.contracts-form-grid textarea { resize:vertical; font-family:inherit; }
+.contracts-modal input:focus,.contracts-modal select:focus,.contracts-modal textarea:focus { border-color:#4b8dff; }
+.contracts-modal-actions { justify-content:flex-end; padding-top:14px; border-top:1px solid #29364c; }
+.contract-detail-modal { width:min(100%,580px); }
+.contract-detail-title { display:flex; align-items:center; gap:12px; padding:15px; border-radius:10px; background:#0c1627; color:#83aaff; }
+.contract-detail-title div { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.contract-detail-title strong { color:#e7edf7; font-size:13px; }
+.contract-detail-title span { color:#8999b1; font-size:10px; }
+.contract-detail-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; padding:14px; border:1px solid #26364e; border-radius:10px; }
+.contract-detail-grid div { display:flex; flex-direction:column; gap:5px; min-width:0; }
+.contract-detail-grid small,.contract-notes small { color:#7889a4; font-size:9px; letter-spacing:.5px; }
+.contract-detail-grid strong { color:#dce5f2; font-size:11px; overflow-wrap:anywhere; }
+.contract-notes { padding:13px; border-radius:9px; background:#0c1627; }
+.contract-notes p { color:#b5c2d5; font-size:11px; line-height:1.6; margin:7px 0 0; white-space:pre-wrap; }
+.payment-update-label { display:flex; flex-direction:column; gap:7px; color:#b9c5d8; font-size:10px; font-weight:700; }
+.payment-update-label select { width:100%; }
+
+@media(max-width:1050px) {
+  .contracts-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:700px) {
+  .contracts-heading { align-items:flex-start; flex-direction:column; }
+  .contracts-heading-actions { width:100%; }
+  .contracts-heading-actions button { flex:1; }
+  .contracts-metrics { gap:8px; }
+  .contracts-metric { padding:12px; gap:9px; }
+  .contracts-metric strong { font-size:21px; }
+  .contracts-metric em { font-size:9px; }
+  .contract-metric-icon { width:33px; height:33px; }
+  .contracts-toolbar { align-items:stretch; flex-direction:column; }
+  .contracts-search { max-width:none; }
+  .contracts-toolbar select { width:100%; }
+  .contracts-bottom-grid { grid-template-columns:1fr; }
+  .contracts-panel { padding:14px; }
+  .contracts-form-grid { grid-template-columns:1fr; }
+  .contracts-form-grid label.wide { grid-column:auto; }
+  .contracts-modal { padding:16px; }
+  .renewal-item { align-items:flex-start; flex-wrap:wrap; }
+  .renewal-item > .contract-status { margin-left:45px; }
+}
