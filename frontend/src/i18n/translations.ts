@@ -188,7 +188,10 @@ export const translations = {
     requestQuote: "Request a Quote",
     productDetails: "Product Details",
     learnMore: "Learn More",
-    professionalServices: "Professional Services"
+    professionalServices: "Professional Services",
+    toggleNavigation: "Toggle navigation menu",
+    securitySurveillanceAlt: "Security surveillance monitoring",
+
   },
 
   my: {
@@ -379,7 +382,9 @@ export const translations = {
     requestQuote: "ဈေးနှုန်းတောင်းခံရန်",
     productDetails: "ပစ္စည်းအသေးစိတ်",
     learnMore: "အသေးစိတ်လေ့လာရန်",
-    professionalServices: "ကျွမ်းကျင်ဝန်ဆောင်မှုများ"
+    professionalServices: "ကျွမ်းကျင်ဝန်ဆောင်မှုများ",
+    toggleNavigation: "လမ်းညွှန်မီနူး ဖွင့်ရန် သို့မဟုတ် ပိတ်ရန်",
+    securitySurveillanceAlt: "လုံခြုံရေး စောင့်ကြည့်ထိန်းချုပ်မှု",
   }
 } as const;
 

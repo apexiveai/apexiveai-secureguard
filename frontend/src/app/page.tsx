@@ -253,7 +253,7 @@ export default function Home() {
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-white"
-              aria-label="Toggle navigation"
+              aria-label={t("toggleNavigation")}
               aria-expanded={menuOpen}
             >
               {menuOpen ? <X size={25} /> : <Menu size={25} />}
@@ -369,7 +369,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#111c2a]">
               <img
                 src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&q=90"
-                alt="Security surveillance monitoring"
+                alt={t("securitySurveillanceAlt")}
                 className="h-[450px] w-full object-cover opacity-85"
               />
 
