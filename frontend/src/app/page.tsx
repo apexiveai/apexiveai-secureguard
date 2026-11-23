@@ -169,6 +169,7 @@ export default function Home() {
             <Link href="/about" className="hover:text-cyan-400">About Us</Link>
             <Link href="/security-guards" className="hover:text-cyan-400">Security Guards</Link>
             <Link href="/cctv-shop" className="hover:text-cyan-400">CCTV Shop</Link>
+            <Link href="/marketplace" className="font-semibold text-emerald-400">Security Equipment Sales</Link>
             <Link href="/services" className="hover:text-cyan-400">Services</Link>
             <Link href="/packages" className="hover:text-cyan-400">Packages</Link>
           </nav>

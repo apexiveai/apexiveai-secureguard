@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "CCTV",
     "Smart Surveillance",
     "Security Management",
+    "Security Marketplace", // အသစ်
+    "Security Equipment Sales", // အသစ်
+    "Integrated Security",
     "ApexiveAI",
   ],
 };
